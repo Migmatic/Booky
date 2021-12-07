@@ -1,6 +1,13 @@
-#page {
-    width: 100%;
+#page, #boxfooter{
+    max-width: 100%;
 }
+
+#section3 ,footer{
+    display: none;
+}
+
+
+/* HEADER */
 
 header {
     flex-direction: column;
@@ -24,7 +31,13 @@ header a:hover {
     border-top-style: none;
 }
 
-h1,h2 {
+/* SECTION 1*/
+
+h1 {
+    font-size: 25px;
+}
+
+h1,h4 {
     margin-left: 5%;
 }
 
@@ -49,4 +62,126 @@ h1,h2 {
 
 #bdr {
     justify-content: center;
+}
+
+#boxfiltre {
+    flex-direction: column;
+    margin-left: 5%;
+    align-items: flex-start;
+}
+
+#boxfiltre ul {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5%;
+    padding: 0;
+}
+
+.filtre {
+    margin: 0 0 10px 0;
+}
+
+#boxfiltre h2 {
+    margin-bottom: -5px;
+}
+
+em {
+    align-items: flex-start;
+    margin-left: 5%;
+}
+
+#info {
+    margin-top: -4px;
+}
+
+
+/* SECTION 2*/
+
+#section2 {
+    flex-direction:column;
+    height: auto;
+    gap: 0;
+}
+
+/* Les plus populaires */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    border-radius: 0px;
+    align-items: center;
+}
+
+aside h1 {
+    white-space: nowrap;
+    gap: 0;
+    width: 100%;
+}
+
+aside h1 i {
+    font-size: 27px;
+    margin: 0;
+}
+
+#titrepop {
+    width:  50%;
+    margin-left: 25px;
+}
+
+#logopop {
+    width:  50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
+.cardp {
+    margin: 0 25px 15px 25px;
+    flex-grow: 1;
+}
+
+aside a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.photop {
+    display: flex;
+    width: 40%;
+}
+
+.photop img{
+    flex-grow: 2; 
+}
+
+.infop {
+    width: 60%;
+}
+
+/* Hébergement */
+
+#boxhebergement {
+    order: 2;
+    background-color: #FFFFFF;
+}
+
+#hebergement {
+    height: auto;
+}
+
+#hebergement a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    flex-grow: 1;
+    margin: 0 25px 15px 25px;
+}
+
+.photo img{
+    width: 100%;
 }

@@ -1,16 +1,15 @@
 
 * {
     box-sizing:border-box;
+    list-style-type: none;
 }
-
-
 
 body {  
     font-family: 'Raleway', sans-serif;
 }
 
 #page {
-    width: 93%;
+    width: 1400px;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -22,7 +21,6 @@ header {
     display: flex;
     justify-content: space-between;
     height: 130px;
-    
 }
 
 header img {
@@ -38,7 +36,6 @@ header nav {
     display: flex;
     justify-content: space-around;
 }
-
 
  header a {
      flex: 1;
@@ -65,7 +62,8 @@ h1 {
 
 h4 {
     font-size: 17px;
-    font-weight: 500; 
+    font-weight: 500;
+    margin: -10px 0 20px 0; 
 }
 
 #bdr {
@@ -94,6 +92,7 @@ h4 {
     height: 60px;
     width: 270px;
     padding-left: 15px;
+    outline: none;
 }
 
 #bouton {
@@ -132,12 +131,9 @@ h4 {
 }
 
 #boxfiltre ul {
-    list-style-type: none;
     display: flex;
-    font-size: 20px;
-    font-weight: 700;
     justify-content: space-around;
-
+    flex-wrap: wrap;
 }
 
 #boxfiltre i {
@@ -155,7 +151,6 @@ h4 {
 
 }
 
-
 .filtre {
     display: flex;
     align-items: center;
@@ -171,7 +166,8 @@ h4 {
 #boxfiltre strong {
     margin-right: 10px;
     margin-left: 10px;
-    
+    font-weight: 700;
+    font-size: 18px;
 }
 
 h2 {
@@ -180,8 +176,8 @@ h2 {
 }
 
 #info {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     font-size: 15px;
     color:#0065FC;
     border-color: #f0f0f0;
@@ -191,7 +187,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-width: 2px;
+    border-width: 1px;
 }
 
 em {
@@ -199,7 +195,7 @@ em {
     align-items: center;
     font-style: normal;
     font-weight: 500;
-
+    margin: 15px 0 0 0;
 }
 
 .filtre:hover {
@@ -208,7 +204,7 @@ em {
     border-color: #DEEBFF;
 }
 
-/* HEBERGEMENT */
+/*SECTION 2 */
 
 #section2 {
     display: flex;
@@ -216,6 +212,8 @@ em {
     gap: 4%;
     height: 630px;
 }
+
+/* Hébergement */
 
 #boxhebergement {
     flex: 67%;
@@ -227,7 +225,7 @@ em {
     height: 460px;
     display: flex;
     flex-wrap: wrap;
-    gap: 4%;
+    gap: 3%;
     justify-content: center;
     
 }
@@ -259,7 +257,7 @@ aside {
     border-color: #FFFFFF ;
     border-width: 4px;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px #e0e0e0;
+    box-shadow: 3px 3px 5px #e0e0e0;
 }
 
 .photo img{
@@ -304,10 +302,6 @@ h3{
     margin : 18px 0 0 4%;
 }
 
-aside h1 {
-    margin : 36px 8% 18px 8%;
-}
-
 #plus {
     text-decoration: none;
     color: black;
@@ -318,7 +312,20 @@ aside h1 {
 }
 
 .card:hover {
-    zoom: 105%;
+    transform: scale(1.05);
+    -moz-transform: scale(1.05);
+}
+
+/* Les plus populaires */
+
+aside h1 {
+    margin : 36px 8% 18px 8%;
+    display: flex;
+    gap: 136px;
+}
+
+aside h1 i {
+    font-size: 22px;
 }
 
 .cardp{
@@ -331,7 +338,7 @@ aside h1 {
     border-radius: 20px;
     display: flex;
     margin: 0 8% 8% 8%;
-    box-shadow: 5px 5px 10px #f0f0f0;
+    box-shadow: 3px 3px 5px #e0e0e0;
 }
 
 .photop img{
@@ -364,25 +371,23 @@ aside h1 {
 }
 
 .cardp:hover {
-    zoom: 105%;
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
-aside h1 {
-    display: flex;
-    justify-content: space-between;
-}
+    
 
 
-/* ACTIVITES */
+/* SECTION 3 */
 
 #section3 {
-    height: 600px;
+    height: 570px;
 }
 
 #boxactivite {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px ;
+    gap:40px 2%;
     flex-direction: column;
     height: 550px;
 }
@@ -390,7 +395,7 @@ aside h1 {
 .activite {
     width: 23%;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px #e0e0e0;
+    box-shadow: 3px 3px 5px #e0e0e0;
 }
 
 #port {
@@ -445,11 +450,61 @@ aside h1 {
 }
 
 .activite:hover {
-    zoom: 105%;
+    transform: scale(1.05);
+    -moz-transform: scale(1.05);
 }
 
 .activite h3 {
     margin:12px 0 0 18px;
 }
 
+
 /* FOOTER */
+
+footer {
+    height: 210px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center; 
+}
+
+#boxfooter{
+    width: 1400px;
+    display: flex;
+    margin: auto;
+    gap: 20%;  
+}
+
+footer li {
+    font-size: 18px;
+    font-weight:440;
+    margin: 0 0 12px 0;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    color:#0065FC;
+}
+
+#un{
+    background-color: brown;
+    width: 768px;
+}
+
+#deux{
+    background-color:burlywood;
+    width: 992px;
+}
+
+#trois {
+    background-color: cadetblue;
+    width: 1500px;
+}

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     
+<!--------------------- HEAD --------------------->
+
 <head>
     <title>Booky</title>
     <meta charset="utf-8" />
@@ -8,7 +10,7 @@
     <link rel="stylesheet" href="CSS/stylebooky.css" />
     <link rel="stylesheet" media="screen and (max-width:992px)" href="CSS/Tablette.css" />
     <link rel="stylesheet" media="screen and (max-width:768px)" href="CSS/Smartphone.css" />
-    <link rel="stylesheet" media="screen and (min-width:1500px)" href="CSS/grandecran.css" />
+    <link rel="stylesheet" media="screen and (max-width:1500px)" href="CSS/petitecran.css" />
     <link rel="stylesheeet" href="CSS/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,20 +18,32 @@
     <script src="https://kit.fontawesome.com/76b42c4338.js" crossorigin="anonymous"></script>       
 </head>
 
+<!--------------------- BODY --------------------->
+
 <body>
     <div id="page">
+
+    <!--------------------- HEADER --------------------->
+
         <header>
             <img src="images/logo/Booki@3x.png" alt="Booky logo" />
             <nav>
-                <a href="#">Hébergements</a>
-                <a href="#">Activités</a>
+                <a href="#section2">Hébergements</a>
+                <a href="#section3">Activités</a>
             </nav>
         </header>
-        
+<!-----
+        <div id="un">FLIPFLOP</div>
+        <div id="deux">FLIPFLOP</div>
+        <div id="trois">FLIPFLOP</div>
+------>
+     
+        <!--------------------- SECTION 1 --------------------->
+
         <section id="section1">
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <h4>En plein centre ville ou en pleine nature</h4>
-
+            <!--------------------- Barre de recherche --------------------->
             <form method="post" action="traite.php">
                 <p id="bdr">
                     <label id="position" for="ville"><i class="fas fa-map-marker-alt"></i></label>
@@ -38,19 +52,24 @@
                     <button id="bouton2" type="submit" value=""><i class="fas fa-search"></i></button>
                 </p>
             </form>
+            <!--------------------- Filtre --------------------->
             <div id="boxfiltre">
                 <h2>Filtres</h2>
                 <ul>
                     <li class="filtre"><i class="fas fa-money-bill-wave"></i><strong>Économique</strong></li>
                     <li class="filtre"><i class="fas fa-child"></i><strong>Familial</strong></li>
                     <li class="filtre"><i class="fas fa-heart"></i><strong>Romantique</strong></li>
-                    <li class="filtre"><i class="fas fa-dog"></i><strong>autorisés</strong></li>
+                    <li class="filtre"><i class="fas fa-dog"></i><strong>Animaux autorisés</strong></li>
                 </ul>
             </div>
+
             <em><span id="info"><i class="fas fa-info"></i></span>Plus de 500 logements sont disponnibles dans cette ville</em>
         </section>
 
+        <!--------------------- SECTION 2 --------------------->
+
         <section id="section2">
+            <!--------------------- Hébergement --------------------->
             <div id="boxhebergement">
                 <h1>Hébergement à Marseille</h1>
                 <div id="hebergement">
@@ -123,20 +142,21 @@
                 </div>
                 <h2><a id="plus" href="#">Afficher plus</a></h2>   
             </div>
-
+            <!--------------------- Hébergement populaire --------------------->
             <aside>
-                <h1><span>Les plus populaires</span><span><i class="fas fa-chart-line"></i></span></h1>
+                <h1> <span id="titrepop">Les plus populaires</span> <span id="logopop"><i class="fas fa-chart-line"></i></span> </h1>
                 <a href="#">
                     <div class="cardp">
                         <div class="photop">
                         <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                         </div>
-                            <div class="infop">
-                            <h3>Hôtel Le soleil du matin</h3>
-                            <p class="tarifp">Nuit à partir de <span class="prix">128€</span></p>
-                            <p class="starp"><span class="bleue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-                            </i><i class="fas fa-star"></i></p>
-                            </div>
+                        
+                        <div class="infop">
+                        <h3>Hôtel Le soleil du matin</h3>
+                        <p class="tarifp">Nuit à partir de <span class="prix">128€</span></p>
+                        <p class="starp"><span class="bleue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
+                        </i><i class="fas fa-star"></i></p>
+                        </div>
                     </div>                          
                 </a>
                 <a href="#">
@@ -144,12 +164,13 @@
                         <div class="photop">
                         <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au cœur de l'eau Chambres d'hôtes">
                         </div>
-                            <div class="infop">
-                            <h3>Au cœur de l'eau Chambres d'hôtes</h3>
-                            <p class="tarifp">Nuit à partir de <span class="prix">71€</span></p>
-                            <p class="star"><span class="bleue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-                            </i></span><span class="gris"><i class="fas fa-star"></i></span></p>
-                            </div>
+
+                        <div class="infop">
+                        <h3>Au cœur de l'eau Chambres d'hôtes</h3>
+                        <p class="tarifp">Nuit à partir de <span class="prix">71€</span></p>
+                        <p class="starp"><span class="bleue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
+                        </i></span><span class="gris"><i class="fas fa-star"></i></span></p>
+                        </div>
                     </div>                          
                 </a>
                 <a href="#">
@@ -157,17 +178,20 @@
                         <div class="photop">
                         <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
                         </div>
-                            <div class="infop">
-                            <h3>Hôtel Tout bleu et Blanc</h3>
-                            <p class="tarifp">Nuit à partir de <span class="prix">68€</span></p>
-                            <p class="star"><span class="bleue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-                            </i></span><span class="gris"><i class="fas fa-star"></i></span></p>
-                            </div>
+
+                        <div class="infop">
+                        <h3>Hôtel Tout bleu et Blanc</h3>
+                        <p class="tarifp">Nuit à partir de <span class="prix">68€</span></p>
+                        <p class="starp"><span class="bleue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
+                        </i></span><span class="gris"><i class="fas fa-star"></i></span></p>
+                        </div>
                     </div>                          
                 </a>
             </aside>
         </section>
         
+        <!--------------------- SECTION 3 --------------------->
+
         <section id="section3">
             <h1>Activités à Marseille</h1>
             <div id="boxactivite">
@@ -208,13 +232,36 @@
                     </a>    
                 </div>             
             </div>
-        </section>
+        </section>       
+    </div>
 
-        <footer>
-            
+    <!--------------------- FOOTER --------------------->
 
-
-
-        </footer>
-    </div>        
+    <footer>
+        <div id="boxfooter">
+            <div class="blocf" id="propos">
+                <h2>A propos</h2>
+                <ul>
+                    <li><a href="#">Fonctionement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="blocf" id="noshebergement">
+                <h2>Nos hébergement</h2>
+                <ul>
+                    <li><a href="#"> Chartre qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="blocf" id="Assistance">
+                <h2>Assistance</h2>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></i>
+                </ul>
+            </div>
+        </div>
+    </footer>     
 </body>
+
