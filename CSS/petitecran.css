@@ -78,5 +78,6 @@ aside h1 {
 /* FOOTER */
 
 #boxfooter {
-    margin-left: 40px;
+    width: 950px;
+    justify-content: center;
 }

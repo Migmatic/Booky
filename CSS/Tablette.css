@@ -1,6 +1,5 @@
 #page {
     width: 700px;
-    background-color: cadetblue;
 }
 
 /* HEADER */
@@ -160,9 +159,11 @@ aside a {
 
 footer {
     height: 200px;
+    justify-content: center;
 }
 
 #boxfooter {
+    width: 700px;
     gap:8%;
     justify-content: center;
     margin: 0;
