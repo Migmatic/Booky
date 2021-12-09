@@ -2,11 +2,6 @@
     max-width: 100%;
 }
 
-#section3 ,footer{
-    display: none;
-}
-
-
 /* HEADER */
 
 header {
@@ -185,3 +180,46 @@ aside a {
 .photo img{
     width: 100%;
 }
+
+/* SECTION 3 */
+
+#section3 {
+    height: auto;
+}
+
+#section3 h1 {
+    margin-bottom: 35px;
+}
+
+#boxactivite {
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    gap: 0;
+    margin: 0 25px 0 25px;
+}
+
+#port, #calanques ,#longchamp ,#garde ,#frioul ,#pomegues {
+    height: 200px; 
+    width: 100%;
+    margin: 0 0 25px 0;
+}
+
+#port img , #calanques img,#longchamp img,#garde img,#frioul img,#pomegues img {
+    height: 150px; 
+}
+
+/* FOOTER */
+
+footer {
+    height: auto;
+}
+
+#boxfooter {
+    flex-direction: column;
+}
+
+.blocf {
+    margin: 25px 0 0 40px;
+}
+
