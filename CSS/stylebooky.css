@@ -227,18 +227,11 @@ em {
     flex-wrap: wrap;
     gap: 3%;
     justify-content: center;
-    
 }
 
 #section2 a, #section3 a{
     text-decoration: none;
     color: black;
-}
-
-aside {
-    flex: 33%;
-    background-color: #f0f0f0;
-    border-radius: 20px;    
 }
 
 .bleue {
@@ -318,10 +311,31 @@ h3{
 
 /* Les plus populaires */
 
-aside h1 {
-    margin : 36px 8% 18px 8%;
+aside {
+    flex: 33%;
+    background-color: #f0f0f0;
+    border-radius: 20px;
     display: flex;
-    gap: 136px;
+    flex-direction: column;
+    align-items: center;    
+}
+
+aside h1 {
+    margin : 36px 0 18px 0;
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    padding: 0 40px 0 40px;
+}
+
+#titrepop {
+    width:  50%;
+}
+
+#logopop {
+    width:  50%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 aside h1 i {
@@ -337,7 +351,7 @@ aside h1 i {
     border-width: 4px;
     border-radius: 20px;
     display: flex;
-    margin: 0 8% 8% 8%;
+    margin-top: 30px;
     box-shadow: 3px 3px 5px #e0e0e0;
 }
 
@@ -374,9 +388,6 @@ aside h1 i {
     -moz-transform: scale(1.05);
     transform: scale(1.05);
 }
-
-    
-
 
 /* SECTION 3 */
 
@@ -494,17 +505,3 @@ footer a:hover{
     color:#0065FC;
 }
 
-#un{
-    background-color: brown;
-    width: 768px;
-}
-
-#deux{
-    background-color:burlywood;
-    width: 992px;
-}
-
-#trois {
-    background-color: cadetblue;
-    width: 1500px;
-}

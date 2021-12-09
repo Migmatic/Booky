@@ -1,4 +1,82 @@
-
 #page {
     width: 950px;
+}
+
+/* HEADER */
+
+header nav {
+    width: 30%;
+}
+
+/* SECTION 2 */
+
+/* Hebergement */
+
+#section2 {
+    height: 820px;
+    gap: 2%;
+}
+
+#boxhebergement {
+    flex: 60%;
+}
+
+#hebergement {
+    height: auto;
+    gap: 20px;
+}
+
+#boxhebergement h1{
+    margin-left: 20px;
+}
+
+#boxhebergement h2{
+    margin-top: 35px;
+}
+
+.card {
+    width: 250px;
+}
+
+.photo img{
+    width: 242px;
+}
+
+/* Les plus populaires */
+
+aside {
+    flex: 40%;
+}
+
+aside h1 {
+    padding: 0 40px 0 40px;
+    margin-bottom: 0;
+}
+
+.cardp {
+    width: 330px;
+    height: 210px;
+}
+
+.photop img {
+    width: 133px;
+    height: 202px;
+}
+
+/* SECTION 3 */
+
+#calanques h3 {
+    position: relative;
+    bottom: 10px;
+}
+
+#garde h3 {
+    position: relative;
+    bottom: 10px;
+}
+
+/* FOOTER */
+
+#boxfooter {
+    margin-left: 40px;
 }

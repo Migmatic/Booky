@@ -1,4 +1,174 @@
 #page {
     width: 700px;
-
+    background-color: cadetblue;
 }
+
+/* HEADER */
+
+header nav {
+    width: 40%;
+}
+
+/* SECTION 1*/
+
+h1 {
+    font-size: 25px;
+}
+
+#boxfiltre {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#boxfiltre ul {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5%;
+    padding: 0;
+}
+
+.filtre {
+    margin: 0 0 10px 0;
+}
+
+#boxfiltre h2 {
+    margin-bottom: -5px;
+}
+
+/* SECTION 2 */
+
+#section2 {
+    flex-direction:column;
+    height: auto;
+}
+
+/* Les plus populaire */
+
+aside {
+    order: 1;
+}
+
+aside h1 {
+    padding: 0 30px 0 30px;
+}
+
+aside h1 i {
+    font-size: 27px;
+    margin: 0;
+}
+
+.cardp {
+    margin: 0 30px 30px 30px;
+    flex-grow: 1;
+}
+
+aside a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.photop {
+    display: flex;
+    width: 40%;
+}
+
+.photop img{
+    flex-grow: 2; 
+}
+
+.infop {
+    width: 60%;
+}
+
+/* Hebergements */
+
+#boxhebergement {
+    order: 2;
+    margin-top: 40px;
+}
+
+#hebergement {
+    height: auto;
+    gap: 30px;
+}
+
+.card{
+    width: 310px;
+    height: 205px;  
+}
+
+.photo img{
+    width: 302px;
+    height: 120px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#boxhebergement h2 {
+    margin: 30px 0 30px 30px;
+}
+
+/* SECTION 3 */
+
+#section3 {
+    height: auto;
+}
+
+#section3 h1 {
+    margin-bottom: 30px;
+}
+
+#boxactivite {
+    max-width: 100%;
+    height: 1000px;
+    justify-content: center;
+    gap: 0;
+}
+
+.activite {
+    width: 330px;
+    margin: 0 40px 40px 0;
+}
+
+#port {
+    order: 2;
+}
+
+#pomegues {
+    order: 1;
+}
+
+#frioul {
+    order: 3;
+}
+
+#calanques {
+    order: 5;
+}
+
+#garde {
+    order: 4;
+}
+
+#longchamp {
+    order: 6;
+}
+
+/* FOOTER */
+
+footer {
+    height: 200px;
+}
+
+#boxfooter {
+    gap:8%;
+    justify-content: center;
+    margin: 0;
+}
+
+#noshebergement h2 {
+    white-space: nowrap;
+}
+

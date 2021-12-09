@@ -101,34 +101,17 @@ em {
 /* Les plus populaires */
 
 aside {
-    display: flex;
-    flex-direction: column;
     order: 1;
     border-radius: 0px;
-    align-items: center;
 }
 
 aside h1 {
-    white-space: nowrap;
-    gap: 0;
-    width: 100%;
+    padding: 0 26px 0 26px;
 }
 
 aside h1 i {
     font-size: 27px;
     margin: 0;
-}
-
-#titrepop {
-    width:  50%;
-    margin-left: 25px;
-}
-
-#logopop {
-    width:  50%;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 25px;
 }
 
 .cardp {
