@@ -47,6 +47,8 @@ header nav {
      font-weight: 500; 
      font-size: 18px;
      color: black;
+     border-top-color: #FFFFFF;
+     border-top-style:solid ;
  }
 
 header a:hover {
@@ -210,7 +212,7 @@ em {
     display: flex;
     justify-content: space-between;
     gap: 4%;
-    height: 630px;
+    height: 650px;
 }
 
 /* Hébergement */
