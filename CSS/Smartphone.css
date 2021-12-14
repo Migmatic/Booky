@@ -19,11 +19,18 @@ header nav {
     width: 100%;
 }
 
+header a {
+    border-bottom-color: #FFFFFF;
+    border-bottom-style:solid ;
+    padding-bottom: 5px;
+}
+
 header a:hover {
     border-bottom-color: #0065FC;
     border-bottom-style:solid ;
     color: #0065FC;
     border-top-style: none;
+    padding-bottom: 5px;
 }
 
 /* SECTION 1*/
